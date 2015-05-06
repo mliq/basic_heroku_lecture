@@ -1,5 +1,5 @@
-var hello = function () {
-    return "Hello world!";
+var hello = function (message) {
+    return "Hello world!\nHere is a custom message:  " + message;
 };
 
 var awkward = function () {
