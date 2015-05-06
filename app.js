@@ -1,10 +1,12 @@
 var express = require('express');
 var app = express();
 
+var message = require('./betaGreeting');
+
 app.set('port', (process.env.PORT) || 5000);
 
-app.get('/', function(req, res){
-    res.send("What up Beta?");
+app.get('/', function(request, response){
+    response.send(message());
 });
 
 app.listen(app.get('port'), function(){
