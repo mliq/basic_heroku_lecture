@@ -1,0 +1,15 @@
+{
+  "name": "basic_heroku_lecture",
+  "version": "1.0.0",
+  "description": "Basic Heroku Lecture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Michael Liquori",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
