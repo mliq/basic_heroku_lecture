@@ -1,12 +1,12 @@
 var express = require('express');
 var app = express();
 
-var message = require('./betaGreeting');
+var betaGreeting = require('./betaGreeting');
 
 app.set('port', (process.env.PORT) || 5000);
 
 app.get('/', function(request, response){
-    response.send(message());
+    response.send(betaGreeting());
 });
 
 app.listen(app.get('port'), function(){

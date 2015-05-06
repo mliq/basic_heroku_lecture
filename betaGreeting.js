@@ -1,5 +1,8 @@
+var messages = require('./messages');
+
 var message = function () {
-    console.log("what up beta?");
+    console.log(messages.hello());
+    return messages.awkward();
 };
 
 module.exports = message;
